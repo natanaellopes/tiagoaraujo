@@ -249,6 +249,10 @@
   <footer>
 
   </footer>
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </button>
 
 </div>
 
@@ -272,6 +276,22 @@
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginRight = "0";
     document.body.style.backgroundColor = "white";
+  }
+
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    $('html, body').animate({
+        scrollTop: 0
+      }, 500);
   }
 
   $(function(){
