@@ -8,25 +8,35 @@
 </head>
 <body>
 
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <h1>
-            <img src="assets/images/logo.png" alt="Tiago Araújo" id="logo">
-          </h1>
-        </div>
-        <div class="col-sm-6"></div>
-        <div class="col-sm-2 text-right">
-          <button class="btn btn-link">
-            <img src="assets/images/icons/nav.png" />
-          </button>
-        </div>
-      </div>      
-    </div>
-  </header>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#team">NOSSA EQUIPE</a>
+    <a href="#expertise">ÁREA DE ATUAÇÃO</a>
+    <a href="#ideals">NOSSOS VALORES</a>
+    <a href="#contact">CONTATO</a>
+  </div>
 
-  <div id="cover"></div>
+  <div id="main">
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h1>
+              <img src="assets/images/logo.png" alt="Tiago Araújo" id="logo">
+            </h1>
+          </div>
+          <div class="col-sm-6"></div>
+          <div class="col-sm-2 text-right">
+            <button id="nav-toggle" class="btn btn-link" onclick="openNav()">
+              <img src="assets/images/icons/nav.png" />
+            </button>
+          </div>
+        </div>      
+      </div>
+    </header>
+
+    <div id="cover"></div>
 
   <!-- <div id="carousel">
     <div id="main-carousel" class="carousel slide" data-ride="carousel">
@@ -75,180 +85,195 @@
     </div>
   </div>
 
-</div>
-
-<div id="expertise">
-  <div class="container">
-    <div class="section-header-container">
-      <div id="expertise-icon">
-        <img src="assets/images/icons/expertise_title.png" />
-      </div>
-      <h3 class="title">ÁREA DE ATUAÇÃO</h3>
-    </div>
-    <div class="row" id="expertise-list">
-      <div class="col-sm-3">
-        <div class="expertise-item">
-          <div class="expertise-item-icon">
-            <img src="assets/images/icons/expertise_prev.png" />
-          </div>
-          <p class="expertise-item-title">PREVIDENCIÁRIO</p>
-          <p class="expertise-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper sagittis erat ac cursus.</p>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="expertise-item">
-          <div class="expertise-item-icon">
-            <img src="assets/images/icons/expertise_business.png" />
-          </div>
-          <p class="expertise-item-title">EMPRESARIAL</p>
-          <p class="expertise-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper sagittis erat ac cursus.</p>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="expertise-item">
-          <div class="expertise-item-icon">
-            <img src="assets/images/icons/expertise_criminal.png" />
-          </div>
-          <p class="expertise-item-title">CRIMINAL</p>
-          <p class="expertise-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper sagittis erat ac cursus.</p>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="expertise-item">
-          <div class="expertise-item-icon">
-            <img src="assets/images/icons/expertise_work.png" />
-          </div>
-          <p class="expertise-item-title">TRABALHISTA</p>
-          <p class="expertise-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper sagittis erat ac cursus.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="ideals">
-  <div class="container">
-    <div id="ideals-icon">
-      <img src="assets/images/icons/ideals.png" />
-    </div>
-    <h3 class="title">NOSSOS VALORES</h3>
-    <div id="ideals-text">
-      <p>Somos um escritório de advocacia atuante na defesa dos interesses de nossos clientes nas diversas áreas afetas ao Direito Empresarial e Contratual. Primamos sempre pelo alto padrão de qualidade nos nossos serviços e excelência no atendimento aos nossos clientes, pautados pela ética, seriedade e compromisso.
-      Atuantes desde 2014, sustentamos o orgulho do patrocínio, com sucesso, de grandes causas, não só de ordem litigiosa ou judicial, como também de ordem contratual e negocial. Acreditamos que o sucesso da advocacia reside principalmente na confiança entre o advogado e o cliente, por meio de um trabalho minucioso e de atendimento personalizado, critérios imperiosos para o atingimento do máximo interesse e satisfação, com a obtenção dos resultados desejados..</p>
-    </div>
-    <div class="row" id="ideals-list">
-      <div class="col-sm-4 ideals-item active" data-target="ideal-1">
-        <img src="assets/images/icons/ideals-1.png" class="img-responsive" />
-        <div class="arrow"></div>
-      </div>
-      <div class="col-sm-4 ideals-item" data-target="ideal-2">
-        <img src="assets/images/icons/ideals-2.png" class="img-responsive" />
-        <div class="arrow"></div>
-      </div>
-      <div class="col-sm-4 ideals-item" data-target="ideal-3">
-        <img src="assets/images/icons/ideals-3.png" class="img-responsive" />
-        <div class="arrow"></div>
-      </div>
-    </div>
-  </div>
-  <div id="ideals-desc">
+  <div id="expertise">
     <div class="container">
-      <div class="ideal-desc" id="ideal-1">
-        <h3>Missão</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis nibh ac nisi pellentesque, at laoreet dui pharetra. Aenean felis nunc, sodales eget tincidunt non, auctor vel augue.</p>
+      <div class="section-header-container">
+        <div id="expertise-icon">
+          <img src="assets/images/icons/expertise_title.png" />
+        </div>
+        <h3 class="title">ÁREA DE ATUAÇÃO</h3>
       </div>
-      <div class="ideal-desc" id="ideal-2">
-        <h3>Visão</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis nibh ac nisi pellentesque, at laoreet dui pharetra. Aenean felis nunc, sodales eget tincidunt non, auctor vel augue</p>
-      </div>
-      <div class="ideal-desc" id="ideal-3">
-        <h3>Destaque</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis nibh ac nisi pellentesque, at laoreet dui pharetra. Aenean felis nunc, sodales eget tincidunt non, auctor vel augue.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="contact">
-  <div class="container">
-    <div id="form">
-      <h3 class="title" id="contact-title">INSCREVA-SE E ENTRAREMOS EM CONTATO</h3>
-      <div class="style-line"></div>
-      <form class="row" action="">
-        <div class="col-sm-4">
-          <input class="form-control" type="text" placeholder="Nome" name="name" />
+      <div class="row" id="expertise-list">
+        <div class="col-sm-3">
+          <div class="expertise-item">
+            <div class="expertise-item-icon">
+              <img src="assets/images/icons/expertise_prev.png" />
+            </div>
+            <p class="expertise-item-title">PREVIDENCIÁRIO</p>
+            <p class="expertise-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper sagittis erat ac cursus.</p>
+          </div>
         </div>
-        <div class="col-sm-4">
-          <input class="form-control" type="email" placeholder="Email" name="email" />
+        <div class="col-sm-3">
+          <div class="expertise-item">
+            <div class="expertise-item-icon">
+              <img src="assets/images/icons/expertise_business.png" />
+            </div>
+            <p class="expertise-item-title">EMPRESARIAL</p>
+            <p class="expertise-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper sagittis erat ac cursus.</p>
+          </div>
         </div>
-        <div class="col-sm-4">
-          <input class="form-control" type="date" placeholder="Data de nascimento" name="birth" />
+        <div class="col-sm-3">
+          <div class="expertise-item">
+            <div class="expertise-item-icon">
+              <img src="assets/images/icons/expertise_criminal.png" />
+            </div>
+            <p class="expertise-item-title">CRIMINAL</p>
+            <p class="expertise-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper sagittis erat ac cursus.</p>
+          </div>
         </div>
-        <div class="col-sm-12">
-          <textarea id="message" class="form-control" name="message" rows="8" placeholder="Mensagem"></textarea>
-        </div>
-        <div class="col-sm-12">
-          <button id="form-submit" type="submit">Enviar mensagem</button>
-        </div>
-      </form>
-    </div>
-    <div id="means">
-      <h3 class="title" id="means-title">ONDE NOS ENCONTRAR</h3>
-      <div class="style-line"></div>
-      <div class="row">
-        <div class="col-sm-4">
-          <p>
-            <span class="fa-stack fa-2x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-home fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <p>Endereço</p>
-          <p>SETOR HOTELEIRO, QUADRA CENTRAL, BLOCO 06, LOJA 04, SOBRADINHO, BRASÍLIA-DF, CEP: 72010-516</p>
-        </div>
-        <div class="col-sm-4">
-          <p>
-            <span class="fa-stack fa-2x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-comment fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <p>Email</p>
-          <p>advogadosctd@gmail.com</p>
-        </div>
-        <div class="col-sm-4">
-          <p>
-            <span class="fa-stack fa-2x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-phone fa-flip-horizontal fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <p>Telefones</p>
-          <p>
-            <small>(61)</small> 3387-9476 <br />
-            9.8595-1325 <br />
-            9.8461-6362
-          </p>
+        <div class="col-sm-3">
+          <div class="expertise-item">
+            <div class="expertise-item-icon">
+              <img src="assets/images/icons/expertise_work.png" />
+            </div>
+            <p class="expertise-item-title">TRABALHISTA</p>
+            <p class="expertise-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper sagittis erat ac cursus.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div id="map">
-  <a target="_blank" href="https://www.google.com.br/maps/place/Centro+de+Refer%C3%AAncia+Especializado+de+Assist%C3%AAncia+Social+-+CREAS+-+Sobradinho/@-15.6384823,-47.8267789,16.5z/data=!4m5!3m4!1s0x935a4062d4823fed:0x807b38c1763e1424!8m2!3d-15.6371457!4d-47.8299383?hl=pt-BR" class="">COMO CHEGAR</a>
-</div>
 
-<footer>
-  
-</footer>
+  <div id="ideals">
+    <div class="container">
+      <div id="ideals-icon">
+        <img src="assets/images/icons/ideals.png" />
+      </div>
+      <h3 class="title">NOSSOS VALORES</h3>
+      <div id="ideals-text">
+        <p>Somos um escritório de advocacia atuante na defesa dos interesses de nossos clientes nas diversas áreas afetas ao Direito Empresarial e Contratual. Primamos sempre pelo alto padrão de qualidade nos nossos serviços e excelência no atendimento aos nossos clientes, pautados pela ética, seriedade e compromisso.
+        Atuantes desde 2014, sustentamos o orgulho do patrocínio, com sucesso, de grandes causas, não só de ordem litigiosa ou judicial, como também de ordem contratual e negocial. Acreditamos que o sucesso da advocacia reside principalmente na confiança entre o advogado e o cliente, por meio de um trabalho minucioso e de atendimento personalizado, critérios imperiosos para o atingimento do máximo interesse e satisfação, com a obtenção dos resultados desejados..</p>
+      </div>
+      <div class="row" id="ideals-list">
+        <div class="col-sm-4 ideals-item active" data-target="ideal-1">
+          <img src="assets/images/icons/ideals-1.png" class="img-responsive" />
+          <div class="arrow"></div>
+        </div>
+        <div class="col-sm-4 ideals-item" data-target="ideal-2">
+          <img src="assets/images/icons/ideals-2.png" class="img-responsive" />
+          <div class="arrow"></div>
+        </div>
+        <div class="col-sm-4 ideals-item" data-target="ideal-3">
+          <img src="assets/images/icons/ideals-3.png" class="img-responsive" />
+          <div class="arrow"></div>
+        </div>
+      </div>
+    </div>
+    <div id="ideals-desc">
+      <div class="container">
+        <div class="ideal-desc" id="ideal-1">
+          <h3>Missão</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis nibh ac nisi pellentesque, at laoreet dui pharetra. Aenean felis nunc, sodales eget tincidunt non, auctor vel augue.</p>
+        </div>
+        <div class="ideal-desc" id="ideal-2">
+          <h3>Visão</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis nibh ac nisi pellentesque, at laoreet dui pharetra. Aenean felis nunc, sodales eget tincidunt non, auctor vel augue</p>
+        </div>
+        <div class="ideal-desc" id="ideal-3">
+          <h3>Destaque</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis nibh ac nisi pellentesque, at laoreet dui pharetra. Aenean felis nunc, sodales eget tincidunt non, auctor vel augue.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact">
+    <div class="container">
+      <div id="form">
+        <h3 class="title" id="contact-title">INSCREVA-SE E ENTRAREMOS EM CONTATO</h3>
+        <div class="style-line"></div>
+        <form class="row" action="">
+          <div class="col-sm-4">
+            <input class="form-control" type="text" placeholder="Nome" name="name" />
+          </div>
+          <div class="col-sm-4">
+            <input class="form-control" type="email" placeholder="Email" name="email" />
+          </div>
+          <div class="col-sm-4">
+            <input class="form-control" type="date" placeholder="Data de nascimento" name="birth" />
+          </div>
+          <div class="col-sm-12">
+            <textarea id="message" class="form-control" name="message" rows="8" placeholder="Mensagem"></textarea>
+          </div>
+          <div class="col-sm-12">
+            <button id="form-submit" type="submit">Enviar mensagem</button>
+          </div>
+        </form>
+      </div>
+      <div id="means">
+        <h3 class="title" id="means-title">ONDE NOS ENCONTRAR</h3>
+        <div class="style-line"></div>
+        <div class="row">
+          <div class="col-sm-4">
+            <p>
+              <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+              </span>
+            </p>
+            <p>Endereço</p>
+            <p>SETOR HOTELEIRO, QUADRA CENTRAL, BLOCO 06, LOJA 04, SOBRADINHO, BRASÍLIA-DF, CEP: 72010-516</p>
+          </div>
+          <div class="col-sm-4">
+            <p>
+              <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-comment fa-stack-1x fa-inverse"></i>
+              </span>
+            </p>
+            <p>Email</p>
+            <p>advogadosctd@gmail.com</p>
+          </div>
+          <div class="col-sm-4">
+            <p>
+              <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-phone fa-flip-horizontal fa-stack-1x fa-inverse"></i>
+              </span>
+            </p>
+            <p>Telefones</p>
+            <p>
+              <small>(61)</small> 3387-9476 <br />
+              9.8595-1325 <br />
+              9.8461-6362
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="map">
+    <a target="_blank" href="https://www.google.com.br/maps/place/Centro+de+Refer%C3%AAncia+Especializado+de+Assist%C3%AAncia+Social+-+CREAS+-+Sobradinho/@-15.6384823,-47.8267789,16.5z/data=!4m5!3m4!1s0x935a4062d4823fed:0x807b38c1763e1424!8m2!3d-15.6371457!4d-47.8299383?hl=pt-BR" class="">COMO CHEGAR</a>
+  </div>
+
+  <footer>
+
+  </footer>
+
+</div>
 
 <script defer src="assets/js/fontawesome-all.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 
 <script src="assets/js/bootstrap.min.js"></script>
 <script>
+
+  /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+    document.getElementById("main").style.marginRight = "300px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+    document.body.style.backgroundColor = "white";
+  }
+
   $(function(){
     $('.ideal-desc').hide();
     $('#ideal-1').show();
@@ -262,6 +287,16 @@
       function() {
       }
       );
+
+    $(document).on('click', 'a[href^="#"]', function (event) {
+      event.preventDefault();
+
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - 60
+      }, 500);
+      closeNav();
+    });
+
   });
 </script>
 </body>
