@@ -1,8 +1,33 @@
+body {
+    font-family: ralewayregular, arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #888;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #333;
+}
+
+h3.title {
+    font-size: 21px;
+    letter-spacing: 1em;
+    margin: 40px 0px;
+}
+
 header {
     padding: 20px 0;
-    position: fixed;
-    width: 100%;
     z-index: 999;
+    position: absolute;
+    margin-bottom: -150px;
+    width: 100%;
+}
+
+header #logo {
+    width: 80px;
 }
 
 header button.btn-link {
@@ -10,6 +35,227 @@ header button.btn-link {
 }
 
 #carousel {
-    height: 100px;
-    background: #333;
+}
+
+#cover {
+    height: 600px;
+    background: url(../images/banner/1.jpg) center top no-repeat;
+    background-size: contain;
+}
+
+#team {
+    margin: 80px 0 180px;
+}
+
+.team-item {
+    width: 270px;
+    margin: 30px;
+}
+
+#team-icon {
+    margin: 30px 0;
+}
+
+#team-text {
+    margin: 30px 10px;
+    line-height: 2em;
+}
+
+#team .title {
+    letter-spacing: 0.4em;
+}
+
+#team .item-desc {
+    padding: 20px;
+}
+
+#team .item-name {
+    background: #060557;
+    color: #fff;
+    padding: 20px 10px;
+    width: 270px;
+    margin: 0 auto;
+}
+
+#team-list {
+    text-align: center;
+}
+
+#team-list img {
+    padding: 0;
+    margin: 0;
+}
+
+#expertise {
+    background: #EEE;
+    padding: 40px 0 120px;
+}
+
+#expertise-list {
+    margin: 80px 0 40px;
+}
+
+.expertise-item {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px 0 #ccc;
+}
+
+.section-header-container {
+    margin: 30px 0;
+}
+
+.expertise-item-title {
+    color: #333;
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+
+
+#ideals {
+    margin: 120px 0;
+}
+
+#ideals-list {
+    margin-top: 40px;
+}
+
+.ideals-item {
+    text-align: center;
+}
+
+.ideals-item.active {
+    opacity: .6;
+}
+
+.ideals-item .arrow {
+    display: none;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid blue;
+}
+
+.ideals-item.active .arrow {
+    display: block;
+}
+
+#ideals-text {
+    max-width: 770px;
+    margin: 0 auto;
+    line-height: 34px;
+    color: #666;
+}
+
+#ideals-desc {
+    background: #060557;
+    color: #fff;
+    text-align: left;
+    height: 300px;
+    padding-top: 40px;
+}
+
+#ideals-desc h3 {
+    color: #fff;
+}
+
+#contact {
+    background: #010066;
+    color: #fff;
+    padding: 40px 0;
+}
+
+#contact-title,
+#means-title {
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 28px;
+    line-height: 0.4;
+}
+
+.style-line {
+    background: url(../images/line.png) no-repeat center center;
+    height: 20px;
+    margin-bottom: 40px;
+}
+
+.form-control {
+    background: #161f32;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 0;
+}
+
+.form-control:focus {
+    color: #fff;
+    background-color: #161f32;
+    border-color: #fff;
+    outline: 0;
+    box-shadow: none;
+}
+
+#message {
+    margin-top: 30px;
+}
+
+#form-submit {
+    padding: 16px 50px;
+    font-size: 20px;
+    background: #fff;
+    border: 1px solid #000;
+    margin-top: 30px;
+
+}
+
+.fa-inverse {
+    color: #010066;
+}
+
+::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+#means {
+    margin-top: 180px;
+    font-size: 18px;
+}
+
+#map {
+    background: url(../images/bg_map.png) center center no-repeat;
+    height: 450px;
+}
+
+#map a {
+    padding: 25px 58px;
+    background: #fff;
+    border-radius: 0;
+    font-size: 20px;
+    margin: 178px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+}
+
+footer {
+    background: url(../images/footer.png) center center no-repeat;
+    height: 229px;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (min-width: 1200px) {
+    #cover {
+        height: 800px;
+        background-size: cover;
+    }
 }
