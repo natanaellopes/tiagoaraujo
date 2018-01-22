@@ -151,11 +151,14 @@ header button.btn-link {
 }
 
 #ideals-desc {
+    display: none;
+    width: 100%;
+    position: absolute;
     background: #060557;
     color: #fff;
     text-align: left;
-    height: 300px;
-    padding-top: 40px;
+    padding: 40px 0;
+    transition: all 100ms linear;
 }
 
 #ideals-desc h3 {
@@ -313,16 +316,16 @@ footer {
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 36px;
+    right: 100px;
     z-index: 99;
     border: none;
     outline: none;
     background-color: #161f32;
     color: white;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 15px 24px;
+    border-radius: 8px;
 }
 
 #myBtn:hover {
