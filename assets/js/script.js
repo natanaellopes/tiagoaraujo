@@ -1,11 +1,14 @@
 $("#contact-form").on( "submit", function( event ) {
   event.preventDefault();
-  console.log( $( this ).serialize() );
-  swal(
-    'Contato feito com sucesso',
-    'Seu contato foi enviado e em breve receberá a resposta no email informado!',
-    'success'
+
+  $.post('send.php', $(this).serialize(), () => {
+    swal(
+      'Contato feito com sucesso',
+      'Seu contato foi enviado e em breve receberá a resposta no email informado!',
+      'success'
     )
+    $(this).trigger("reset");
+  });
 });
 
 // Menu
