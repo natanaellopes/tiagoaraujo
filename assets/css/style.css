@@ -100,6 +100,7 @@ header button.btn-link {
     background: #fff;
     padding: 20px;
     box-shadow: 0 0 5px 0 #ccc;
+    height: 450px;
 }
 
 .section-header-container {
@@ -330,4 +331,12 @@ footer {
 
 #myBtn:hover {
     background-color: #555;
+}
+
+.m-t-30 {
+    margin-top: 30px;
+}
+
+.hide {
+    display: none;
 }
