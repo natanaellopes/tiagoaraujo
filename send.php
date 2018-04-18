@@ -13,4 +13,4 @@ $html .= "Mensagem: $message" . "\n";
 $html .= "\n";
 $html .= "Enviado em " . date('Y-m-d H:i:s');
 
-mail('contato@tdadvogados.com.br', 'Contato enviado pelo site', $html);
+mail('contato@tdadvogados.com', 'Contato enviado pelo site', $html);
